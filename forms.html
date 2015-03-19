@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link href="css/forms.css" rel="stylesheet">
+    </head>
+<body>
+
+<form action="thanks.html" method="post">
+
+    <div>
+        <label for= "name">Name</label>
+        <input id="name">
+    </div>
+    
+     <div>
+        <label for= "email-addr">E-mail address</label>
+        <input type="email" id="email-addr">
+    </div>
+    
+    <div>
+        <label for= "types">Input types</label>
+        <input class="field" type="email" id="types">
+        
+        <!--
+         All the input types:
+         -text idefault, if you leave the type="" off
+         -email
+         -url
+         -tel
+         -password
+         -date
+         -time
+         -color
+         -file
+         -checkbox
+         -range
+         -radio
+-search
+-number
+-->
+    </div>
+    
+    <div>
+        <label for="awsome"> level of awesomeness:</label>
+        <input type="range" id="awsome" min="4" max="11" value="10">
+        
+        <!--min="" and max="" also work for type="number" -->
+        
+    </div>
+    
+    <div>
+        <input type="checkbox" id="dinos">
+        <label for="dinos"> Dinosaurs are awsome</label>
+    </div>
+    
+     <div>
+         <p>How much do you like cats?</p>
+         
+        <input type="radio" id="not" name="like-cats">
+        <label for="not"> Not at all.</label>
+         
+        <input type="radio" id="kinda" name="like-cats">
+        <label for="kinda"> Kinda...</label>
+         
+        <input type="radio" id="love" name="like-cats">
+        <label for="love">Love all the cats!</label>
+         
+     </div>
+    
+    <div>
+        <label for="fav-color"> Favourite colour</label>
+        <select id="fav-color">
+            <option>Orange</option>
+            <option>Black</option>
+            <option slected>Grey</option>
+            <option>Black</option>
+        </select>
+    </div>
+    
+    <div>
+    <button type="submit"> Sent!</button>
+    </div>
+
+
+</form>
+
+</body>
+</html>
